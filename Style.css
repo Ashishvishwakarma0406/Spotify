@@ -1,0 +1,352 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: white;
+    overflow: hidden; 
+
+}
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    height: 100vh;  /* screen size to be accupied */
+}
+
+
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 60px;
+}
+.nav-more{
+    display: flex;
+    align-items: center;
+}
+.middle{
+    display: flex;
+    align-items: center;
+
+}
+.nav-home{
+    display: flex;
+    padding-right: 1rem;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    background-color: #121212;
+    width: 480px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+/* .right{
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+.right {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Ensures no wrapping */
+    padding: 3rem;
+}
+.navbar i{
+    font-size:20px; 
+}
+
+.playlist{
+    z-index: 2;
+    background-color:  #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    width: 80px;
+    height: 635px;
+    overflow: hidden;
+    margin: 0.3rem;
+    border-radius: 0.8rem;
+
+}
+.listicon{    
+    position: fixed;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #121212;
+    z-index: 2;
+}
+.listicon i{
+    font-size: 30px;
+    padding: 1.1rem;
+
+}
+
+.list{
+    /* position: relative;
+    top: 65px; */
+    margin-top: 4.1rem;
+    overflow: auto;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
+.list img{
+    height: 100%;
+    width: 100%;
+}
+.listdd{
+    margin: 5px;
+    border-radius: 0.6rem;
+    width:64px;
+    height: 64px;
+}
+
+.content{
+    position: relative;
+    top: 60px;
+    height: 635px;
+    margin: 0.3rem;
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+
+}
+
+.firstbtn{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    top: 15px;
+    padding: 0 0.3rem 0 2rem;
+
+}
+.allbtn{
+    height: 30px;
+    width: 40px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    
+}
+
+.musicbtn{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+}
+.podcastbtn{
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+}
+.spacebtn{
+    height: 30px;
+    width: 55rem;
+    border-radius: 20px;
+    /* background-color: aqua; */
+}
+
+.playlistblock{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 1rem 01rem;
+    position: relative;
+    top: 30px;
+    row-gap: 5px;
+
+}
+
+.eachblock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(94, 94, 94);
+    height: 65px;
+    width: 250px;
+    margin: 10px;
+    border-radius:5px;
+}
+.eachblockimg{
+    height: 65px;
+    width: 65px;
+    border-radius: 5px 0 0 5px;
+}
+.playlistblock .eachblock img{
+    height: 100%;
+    width: 100%;
+}
+
+.eachblockname{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+}
+
+.madeforme{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    margin: 0 2rem 0 1.7rem;
+}
+.madeformea{
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+.madeforme_section{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 60px;
+    margin: 10px;
+}
+.madeforme_block{
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.madeforme_imgblock{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.madeforme_name{
+    height: 45px;
+    width: 200px;
+    margin: 2.5px 0 2.5px 0;
+    font-size: small;
+}
+.madeforme_name p{
+    padding: 5px 10px 0 10px;
+}
+/* after made for me  */
+
+.recomendforme{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+    margin: 0 2rem 0 1.7rem;
+}
+.recomendformea{
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+.recomendforme_section{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 60px;
+    margin: 10px;
+}
+.recomendforme_block{
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.recomendforme_imgblock{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.recomendforme_name{
+    height: 45px;
+    width: 200px;
+    margin: 2.5px 0 2.5px 0;
+    font-size: small;
+}
+.recomendforme_name p{
+    padding: 5px 10px 0 10px;
+}
+
+
+.video{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    background-color: #121212;
+    top: 60px;
+    width: 400px;
+    height: 635px;
+    margin: 0.3rem;
+    border-radius: 1rem;
+    overflow: auto;
+
+}
+.videoblock{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(205, 205, 205);
+}
+.videonav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    top: 5px;
+    width: 400px;
+    height: 30px;
+    background-color: #121212;
+}
+
+
+
+.music-player{
+    background-color: #121212;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+
+}
